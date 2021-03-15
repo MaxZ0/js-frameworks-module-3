@@ -45,7 +45,7 @@ function ProductList({}) {
           <div key={product.id} className="card-container">
             <div>
               <h4>{product.title}</h4>
-              <Link to={`/product/${product.id}`}>
+              <Link to={`/products/${product.id}`}>
                 <button> Product Detail</button>
               </Link>
             </div>
