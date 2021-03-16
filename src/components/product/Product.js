@@ -4,7 +4,7 @@ import { BASE_URL } from "../../constants/api";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-function ProductList({}) {
+function ProductList() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
