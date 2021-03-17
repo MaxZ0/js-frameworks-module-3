@@ -4,7 +4,7 @@ import HomePage from "./components/home/HomePage";
 import Product from "./components/product/Product";
 import Nav from "./components/layout/Nav";
 import "./App.css";
-import DetailPage from "./components/details/Detail";
+import DetailPage from "./components/product/Detail";
 
 function App() {
   return (
