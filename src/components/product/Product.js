@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Heading from "../layout/Heading";
-import { BASE_URL } from "../../constants/api";
+import { BASE_URL, PRODUCTS_ENDPOINT } from "../../constants/api";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
@@ -12,7 +12,8 @@ function ProductList() {
   useEffect(function () {
     async function fetchData() {
       try {
-        const response = await fetch(BASE_URL);
+        const response = await fetch(`${BASE_URL}${PRODUCTS_ENDPOINT}`);
+        console.log(response);
 
         if (response.ok) {
           const json = await response.json();
